@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Joao Prado <joaoprado275@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/joaoprado-rs/librarius"
-keywords = ["rust", "logger", "logging", "librarius", "debugger", "debug", "error", "info", "warn"]
+keywords = ["log", "logger", "logging", "librarius", "debug"]
 description = "A simple and lightweight logging library for Rust. It provides a flexible framework for emitting log messages from Rust programs, with support for different log levels and output formats."
 
 [dependencies]
