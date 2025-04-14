@@ -17,6 +17,7 @@ Add the following dependency to your `Cargo.toml`:
 ```toml
 [dependencies]
 librarius = "0.1"
+```
 
 ## Usage Example
 
