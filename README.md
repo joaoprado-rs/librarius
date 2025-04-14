@@ -39,8 +39,8 @@ fn main() {
     warn!("This is a warning log");
     error!("This is an error log");
     debug!("This is a debug log");
-}```
-
+}
+```
 
 ### Logging at a file
 ```rust
