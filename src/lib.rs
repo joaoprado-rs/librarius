@@ -1,18 +1,15 @@
-pub mod log {
-    #[derive(Debug, PartialEq, Eq)]
-    pub enum Level {
-        Info,
-        Warn,
-        Error,
-        Debug,
-    }
-}
-pub struct Config {
-    pub level: log::Level,
-}
+pub mod config;
+pub mod logger;
+pub mod macros; // info!, warn!, etc.
 
-impl Config {
-    pub fn new(level: log::Level) -> Self {
-        Config { level }
-    }
+pub use crate::config::log::Level;
+pub use config::Config;
+pub use logger::Logger;
+
+pub fn init(config: Config) {
+    Logger::init(Logger {
+        level: config.level,
+        log_file: config.log_to_file,
+        file_path: config.file_path.clone(),
+    });
 }
