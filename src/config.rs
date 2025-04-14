@@ -23,11 +23,11 @@ impl Config {
         }
     }
 
-    pub fn with_file(level: log::Level, file_path: String) -> Self {
+    pub fn with_file(level: log::Level, file_path: &str) -> Self {
         Config {
             level: level,
             log_to_file: true,
-            file_path: Some(file_path),
+            file_path: Some(file_path.to_string()),
         }
     }
 }

@@ -2,6 +2,11 @@
 name = "librarius"
 version = "0.1.0"
 edition = "2021"
+authors = ["Joao Prado <joaoprado275@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/joaoprado-rs/librarius"
+keywords = ["rust", "logger", "logging", "librarius", "debugger", "debug", "error", "info", "warn"]
+description = "A simple and lightweight logging library for Rust. It provides a flexible framework for emitting log messages from Rust programs, with support for different log levels and output formats."
 
 [dependencies]
 chrono = "0.4.40"
