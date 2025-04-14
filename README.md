@@ -68,7 +68,7 @@ You can configure Librarius by creating a Config, where you define the log level
 ```rust
 use librarius::{Config, Level};
 
-let config = Config::with_file(Level::Info, String::from("logs.txt"));
+let config = Config::with_file(Level::Info, "logs.txt");
 ```
 
 ## License
