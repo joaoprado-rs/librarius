@@ -21,7 +21,7 @@ librarius = "0.1"
 
 ## Usage Example
 
-### Logging at the terminal
+#### Logging at the terminal
 
 ```rust
 use librarius::{Logger, Level, Config};
@@ -42,7 +42,7 @@ fn main() {
 }
 ```
 
-### Logging at a file
+#### Logging at a file
 ```rust
 use librarius::{Logger, Level, Config};
 
@@ -59,7 +59,8 @@ fn main() {
     warn!("This is a warning log");
     error!("This is an error log");
     debug!("This is a debug log");
-}```
+}
+```
 
 ## Configuration
 You can configure Librarius by creating a Config, where you define the log level and whether logs should be written to a file:
