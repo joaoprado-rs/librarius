@@ -49,7 +49,7 @@ use librarius::{Logger, Level, Config};
 fn main() {
 
     // Create the configuration
-    let config = Config::with_file(Level::Info, String::from("logs.txt"));
+    let config = Config::with_file(Level::Info, "logs.txt");
     
     // Initialize the logger
     librarius::init(config);
